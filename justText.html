@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Navbar</title>
+
+    <style>
+/*
+        *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+        }
+       body{
+    
+           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            line-height: 1.5rem;
+       }
+
+       .navbar{
+          max-width: 400px;
+          background-color: blue;
+          height: 100%;
+
+       }
+
+       .navbar h1{
+           font-size: 40px;
+           font-weight: 800;
+           padding: 40px 20px ;
+           text-align: center;
+           display: block;
+           background-color:#ccc
+
+       }
+
+       .red-h{
+           color: red;
+           font-family: poppins;
+           font-weight: 800;
+       }
+
+       
+
+       ul{
+           
+           list-style-type: none;
+       }
+
+       li{
+        
+        border-bottom:1px solid rgb(160, 129, 232);
+        
+       }
+
+       .navbar a{
+          text-decoration: none;
+          color: #fff;
+          padding: 20px 30px;
+          display: block;
+          
+       }
+
+       .navbar a:hover{
+         background-color: darkblue;
+          
+       }
+
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+}
+
+.navbar{
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: 14vh;
+
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    
+
+}
+
+li{
+    display: block;
+}
+
+.navbar a{
+  text-decoration: none;
+ 
+  padding:35px 20px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+
+
+ 
+}
+
+.navbar a:hover{
+    cursor: pointer;
+    background-color: darkblue;
+    color: #fff;
+}
+
+.active{
+    background-color: darkblue;
+}
+
+
+
+.red-h{
+    color:red
+}
+.brand-logo{
+    color: #fff;
+    font-weight: 800
+}
+
+/*MEDIA BREAKPOINT*/
+
+@media screen and (max-width: 600px) {
+    .navbar{
+      
+       background-color: black;
+       height: 50vh;
+    }
+
+    ul{
+       display: flex;
+       flex-direction: row;
+
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="brand-logo"><span class="red-h">H</span>-MEDICS</h1>
+        <nav>
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Apply For Test</a></li>
+                <li><a href="">Concelling</a></li>
+                <li><a href="">Contact us</a></li>
+          </ul>
+        </nav>
+    </div>
+</body>
+</html>
